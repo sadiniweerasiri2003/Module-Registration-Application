@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>register Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"><link rel="stylesheet" href="../css/register.css">
+
+</head>
+
+<body class="align">
+
+<div class="grid">
+
+        <form action="../php/register.php" method="POST" class="form login">
+            <div class="form__field">
+                <!-- Lock Icon -->
+                <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use></svg>
+                <label for="login__password">NIC:</label>
+                <input id="login__password" type="password" name="nic" class="form__input" placeholder="NIC" required>
+            </div>
+            <div class="form__field">
+                <!-- User Icon -->
+                <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use></svg>
+                <label for="login__username">Username:</label>
+                <input id="login__username" type="text" name="username" class="form__input" placeholder="Username" required>
+            </div>
+
+
+            <div class="form__field">
+                <!-- Telephone Icon -->
+                <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#telephone"></use></svg>
+                <label for="login__telephone">Telephone No:</label>
+                <input id="login__telephone" type="tel" name="telephone" class="form__input" placeholder="Telephone No" required>
+            </div>
+
+            <div class="form__field">
+                <!-- Course Icon -->
+                <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#course"></use></svg>
+                <label for="login__course">Course:</label>
+                <input id="login__course" type="text" name="course" class="form__input" placeholder="Course" required>
+            </div>
+
+            <div class="form__field">
+                <!-- Address Icon -->
+                <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#address"></use></svg>
+                <label for="login__address">Address:</label>
+                <input id="login__address" type="text" name="address" class="form__input" placeholder="Address" required>
+            </div>
+
+            <div class="form__field">
+                <input type="submit" value="Sign up">
+            </div>
+        </form>
+
+        <p class="text--center">Already a member? <a href="login.html">Sign in now</a> <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#arrow-right"></use></svg></p>
+</div>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="icons">
+    <!-- Existing symbols -->
+    <use xlink:href="assets/images/icons.svg#user"></use>
+    <use xlink:href="assets/images/icons.svg#lock"></use>
+
+    <!-- New symbols -->
+    <symbol id="telephone" viewBox="0 0 24 24">
+        <!-- SVG path for telephone icon -->
+    </symbol>
+    <symbol id="course" viewBox="0 0 24 24">
+        <!-- SVG path for course icon -->
+    </symbol>
+    <symbol id="address" viewBox="0 0 24 24">
+        <!-- SVG path for address icon -->
+    </symbol>
+</svg>
+</body>
+</html>
